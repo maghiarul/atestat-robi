@@ -1,0 +1,60 @@
+@font-face {
+  font-family: "Firasans-Black";
+  src: url("../../assets/fonts/FiraSans-Black.ttf");
+}
+@font-face {
+  font-family: "Firasans-Bold";
+  src: url("../../assets/fonts/FiraSans-Bold.ttf");
+}
+@font-face {
+  font-family: "Firasans-Regular";
+  src: url("../../assets/fonts/FiraSans-Regular.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --black: #000814;
+  --navy: #84899a;
+  --blue: #003566;
+  --gold: #ffd60a;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  background: url("../../assets/images/bgfaq.svg");
+  background-size: cover;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Firasans-Bold";
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+h3 {
+  font-family: "Firasans-Bold";
+  font-size: 2rem;
+  color: var(--black);
+}
+p {
+  font-family: "Firasans-Regular";
+  font-size: 1.25rem;
+  margin-top: 0.5rem;
+  color: var(--navy);
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 25rem;
+}
+.faq {
+  margin: 1.5rem auto;
+}

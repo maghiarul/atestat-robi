@@ -1,0 +1,93 @@
+@font-face {
+  font-family: "Firasans-Black";
+  src: url("../assets/fonts/FiraSans-Black.ttf");
+}
+@font-face {
+  font-family: "Firasans-Bold";
+  src: url("../assets/fonts/FiraSans-Bold.ttf");
+}
+@font-face {
+  font-family: "Firasans-Regular";
+  src: url("../assets/fonts/FiraSans-Regular.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --black: #000814;
+  --navy: #001d3d;
+  --blue: #003566;
+  --gold: #ffd60a;
+}
+
+.navbar {
+  display: flex;
+  margin: 2rem;
+  align-items: center;
+  justify-content: space-between;
+  .links > a {
+    font-family: "Firasans-Bold";
+    text-decoration: none;
+    color: var(--black);
+    padding: 10px;
+    margin: 0rem 1rem;
+    font-size: 1.35rem;
+    transition: 0.2s;
+  }
+  .links > a:hover {
+    color: var(--gold);
+  }
+  .icon > img {
+    cursor: pointer;
+  }
+}
+
+.content {
+  display: flex;
+  justify-content: space-around;
+  margin: 10rem 15rem;
+  .text {
+    color: var(--black);
+    h1 {
+      font-size: 5rem;
+      font-family: "Firasans-Black";
+    }
+    h3 {
+      margin-top: 2rem;
+      font-size: 2rem;
+      font-family: "Firasans-Regular";
+    }
+  }
+}
+
+.more-content {
+  font-family: "Firasans-Regular";
+  font-size: 1.25rem;
+  .ll {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    p {
+      margin-top: 1rem;
+      max-width: 800px;
+    }
+  }
+  .rv {
+    flex-direction: row-reverse;
+  }
+  margin: 11rem 10rem;
+  .lol {
+    margin-bottom: 10rem;
+  }
+}
+
+.mid {
+  margin-top: 5rem;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
