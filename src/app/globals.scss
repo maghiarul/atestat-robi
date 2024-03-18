@@ -78,6 +78,15 @@
   }
   .rv {
     flex-direction: row-reverse;
+    .textt {
+      h1,
+      p {
+        margin-left: 20px;
+      }
+      a {
+        right: 0;
+      }
+    }
   }
   margin: 11rem 10rem;
   .lol {
@@ -85,9 +94,35 @@
   }
 }
 
+.textt {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    bottom: 0;
+    color: var(--black);
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 18px;
+    border-radius: 50px;
+  }
+  p {
+    text-indent: 20px;
+  }
+}
 .mid {
   margin-top: 5rem;
   display: block;
   margin-right: auto;
   margin-left: auto;
+  max-width: 1500px;
+}
+
+img {
+  object-fit: cover;
 }
